@@ -1,7 +1,9 @@
+import NavbarComponent from '@/components/NavBarComponent'
 import './globals.css'
 import { Inter } from 'next/font/google'
-
+import FooterComponent from '@/components/FooterComponent'
 const inter = Inter({ subsets: ['latin'] })
+
 
 export const metadata = {
   title: 'Create Next App',
@@ -10,8 +12,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en">      
+      <body className={inter.className}>
+        <NavbarComponent/>
+        {children}
+        <FooterComponent/>
+      </body>
     </html>
   )
 }
