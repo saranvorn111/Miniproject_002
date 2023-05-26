@@ -19,7 +19,7 @@ export default function Card({ title, image, price, id }) {
           alt="product image"
         />
       </Link>
-      <div className="px-5 pb-5">  
+      <div className="px-5 pb-5">
         <a href="#">
           <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
             {title ? title : "Untitled"}
